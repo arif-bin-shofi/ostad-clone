@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans Bengali", "Hind Siliguri", "Open Sans", "Ubuntu",
+  font-family: "Hind Siliguri", "Open Sans", "Ubuntu",
     sans-serif;
 }
 
@@ -652,6 +652,113 @@ header {
   background-color: #b4c0b5;
 }
 
+.master-class-container{
+  background-color: #1D2939;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0 60px;
+}
+.master-class-container h1{
+text-align: center;
+justify-content: center;
+font-weight: 900;
+justify-items: center;
+}
+/* Master Class Category Grid */
+.master-class-catagory {
+  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* প্রতি রোতে ৪টি কলাম */
+    gap: 10px; /* আইটেমের মধ্যে স্পেস */
+    margin-bottom: 20px;
+    font-family: "Hind Siliguri";
+}
+.master-class-catagory div{
+  width: auto;
+  border-radius: 10px;
+  background-color: #0f141a;
+  color: #fff;
+  text-align: center;
+
+}
+
+.master-class-catagory div p{
+font-size: 1rem;
+  text-align: center;
+
+}
+.master-class-upcomingClass {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* প্রতি রোতে ৪টি কার্ড */
+    gap: 20px;
+}
+
+/* Optional: Master Class Card Styling */
+.master-classes {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.master-classes img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.master-classes h1 {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #000;
+    font-weight: bold;
+}
+
+.master-classes p {
+    font-size: 14px;
+    color: gray;
+}
+
+.coursebtn {
+
+    padding: 8px 12px;
+    background-color: #eff5ef;
+    color: black;
+    border: none;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.coursebtn:hover {
+    background-color: #dee7de;
+    color: #000;
+}
+.details-see-more {
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.details-see-more button {
+    padding: 8px 12px;
+    background-color: #eff5ef;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.details-see-more button:hover {
+    background-color: #dee7de;
+    color: #000;
+}
 
 .live-course-section {
   padding: 0 65px;
