@@ -186,9 +186,11 @@
     grid-template-columns: repeat(2, 1fr); /* প্রতি সারিতে ৪টা */
     margin-top: 20px;
     margin-bottom: 10px;
+    padding: 0 20px;
   }
   .category-item {
     min-width: 100px;
+
   }
 
   .course-card img {
