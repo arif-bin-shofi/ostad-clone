@@ -1,5 +1,10 @@
 /* Responsive: Mobile */
 @media (max-width: 768px) {
+  h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
   /* Hide items */
   .search-btn,
   .menu,
@@ -178,7 +183,7 @@
 .category-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* প্রতি সারিতে ৪টা */
-  gap: 10px;
+ 
   margin-bottom: 10px;
 }
   .category-item {
@@ -343,7 +348,7 @@
 }
 
 .live-course-section h2 {
-  margin: 10px 0;
+  margin: 0 0 10px 0; /* শুধু bottom margin রাখলাম */
   font-size: 20px;
   text-align: center;
   font-family: "Hind Siliguri";
@@ -388,84 +393,40 @@
 
 
 .stats-grid {
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   text-align: center;
 }
 
-.stat-item-1 {
-  height: auto;
+.stat-item-1 ,.stat-item-2 , .stat-item-3 , .stat-item-4 {
+  height: 60px;
+  padding: 5px;
   background-color: #d1fadf;
   border-radius: 10px;
 }
-.stat-item-1 h1 {
-  font-size: 20px;
+.stat-item-1 h1 , .stat-item-2 h1, .stat-item-3 h1, .stat-item-4 h1 {
+
+  font-size: 18px;
   color: black;
+  margin-top: 6px;
 
 }
-.stat-item-1 p {
+.stat-item-1 p, .stat-item-2 p , .stat-item-3 p , .stat-item-4 p   {
   font-size: 14px;
   color: black;
   font-weight: normal;
-  margin-top: -15px;
+  margin-top: 4px;
   font-family: "Hind Siliguri";
 }
 
-.stat-item-2 {
-  height: 80px;
-  background-color: #dae4ff;
-  border-radius: 10px;
-}
-.stat-item-2 h1 {
-  font-size: 20px;
-  color: black;
-  
-
- 
-}
-.stat-item-2 p {
-  font-size: 14px;
-  color: black;
-  font-weight: normal;
-  margin-top: -15px;
-  font-family: "Hind Siliguri";
-}
-
-.stat-item-3 {
-  height: 80px;
-  background-color: #ffe8db;
-  border-radius: 10px;
-}
-.stat-item-3 h1 {
-  font-size: 20px;
-  color: black;
-  
-}
-.stat-item-3 p {
-  font-size: 14px;
-  color: black;
-  font-weight: normal;
-  margin-top: -15px;
-  font-family: "Hind Siliguri";
-}
-
-.stat-item-4 {
-  height: 80px;
-  background-color: #fff2cc;
-  border-radius: 10px;
-}
-
-.stat-item-4 h1 {
-  font-size: 20px;
-  color: black;
-}
-
-.stat-item-4 p {
-  font-size: 14px;
-  color: black;
-  margin-top: -15px;
-  font-family: "Hind Siliguri";
+.testimonial-section {
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  padding: 0 60px;
+  margin-top: 20px;
 }
 
 }
