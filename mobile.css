@@ -1,9 +1,15 @@
 /* Responsive: Mobile */
 @media (max-width: 768px) {
-  h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    padding: 0;
+  }
 
   /* Hide items */
   .search-btn,
@@ -26,26 +32,27 @@
     padding: 10px 15px;
   }
 
- .logo {
-  font-size: 18px;
-  font-weight: 700;
-  color: #111a2c;
-}
+  .logo {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111a2c;
+  }
 
-.logo img {
-  height: 24px;
-  width: auto;
-  display: block;
-}
+  .logo img {
+    height: 24px;
+    width: auto;
+    display: block;
+  }
 
   .nav-right {
     gap: 10px;
   }
 
   .caintainer {
+    justify-content: center;
     padding: 0 20px;
+    background-color: #f7f9fc;
   }
-
 
   .mocku-banner {
     padding: 1rem;
@@ -55,7 +62,7 @@
   .mocku-content {
     height: 25px;
     font-size: 0.7rem;
-    padding: 0.60rem 1rem;
+    padding: 0.6rem 1rem;
   }
 
   .mocku-content p {
@@ -63,9 +70,8 @@
     padding: 2px 8px;
   }
 
- 
   .banner {
-    flex-direction: column;   /* একের পর এক আসবে */
+    flex-direction: column; /* একের পর এক আসবে */
     align-items: center;
     text-align: center;
     gap: 20px;
@@ -95,7 +101,6 @@
     max-width: 400px; /* মোবাইলে সীমিত সাইজ */
   }
 
- 
   .logo-grid {
     justify-content: center;
   }
@@ -106,18 +111,17 @@
   }
 
   .bottom-banner {
-  width: auto;
-  height: 35px;
-  background: linear-gradient(90deg, #0c3f30, #0f141a, #0c3f30); /* 3 রঙ */
-  color: #fff;
-  display: flex;
-  justify-content: space-between; /* বাম পাশে text+img, ডানে button */
-  align-items: center;
-  border-radius: 8px;
-  padding: 5px;
-  gap: 10px;
-}
-
+    width: auto;
+    height: 35px;
+    background: linear-gradient(90deg, #0c3f30, #0f141a, #0c3f30); /* 3 রঙ */
+    color: #fff;
+    display: flex;
+    justify-content: space-between; /* বাম পাশে text+img, ডানে button */
+    align-items: center;
+    border-radius: 8px;
+    padding: 5px;
+    gap: 10px;
+  }
 
   .banner-start {
     gap: 5px;
@@ -127,68 +131,64 @@
     width: 30px;
     height: 30px;
     flex-shrink: 0;
-    
   }
 
   .banner-start h3 {
-  font-size: 12px;
-  font-weight: 300;
-   font-family: "Hind Siliguri";
-}
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Hind Siliguri";
+  }
 
-.banner-start span {
-  font-size: 10px;
-  font-weight: 300;
-   font-family: "Hind Siliguri";
-  display: block;
-}
+  .banner-start span {
+    font-size: 10px;
+    font-weight: 300;
+    font-family: "Hind Siliguri";
+    display: block;
+  }
 
- .btn-yellow-dark {
-  background: #ffcc00;
-  color: #000;
-  padding: 5px 5px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-family: "Hind Siliguri";
-  font-weight: bold;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
- }
+  .btn-yellow-dark {
+    background: #ffcc00;
+    color: #000;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Hind Siliguri";
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
 
+  .upcoming-title {
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: -8px;
+    display: flex;
+    gap: 5px;
+  }
+  .upcoming-title h2 {
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    gap: 10;
+  }
+  .upcoming-title img {
+    width: 30px;
+    height: 30px;
+  }
 
-.upcoming-title {
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  margin-bottom: -8px;
-  display: flex;
-  gap: 5px;
-}
-.upcoming-title h2 {
-  font-size: 20px;
-  font-weight: 600;
-  display: inline-block;
-  justify-content: center;
-  text-align: center;
-  gap: 10;
-}
-.upcoming-title img {
-  width: 30px;
-  height: 30px;
-}
-
-
-.category-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* প্রতি সারিতে ৪টা */
- margin-top: 20px;
-  margin-bottom: 10px;
-}
+  .category-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* প্রতি সারিতে ৪টা */
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
   .category-item {
     min-width: 100px;
-    padding: 12px;
   }
 
   .course-card img {
@@ -202,7 +202,6 @@
   .category-item {
     min-width: 150px;
     gap: 10px;
-    padding: 10px;
   }
 
   .category-item h4 {
@@ -255,107 +254,104 @@
     justify-content: flex-start;
   }
 
+  .category-courses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* ৪টি কার্ড প্রতি সারিতে */
+    gap: 10px;
+  }
 
-.category-courses {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* ৪টি কার্ড প্রতি সারিতে */
-  gap: 10px;
-}
+  .course-card {
+    display: flex;
+    flex-direction: column; /* কার্ড ভেতরের উপাদান লম্বা ভাবে সাজাবে */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative; /* all-btn-div absolute এর জন্য */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
 
-.course-card {
-  display: flex;
-  flex-direction: column; /* কার্ড ভেতরের উপাদান লম্বা ভাবে সাজাবে */
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  position: relative; /* all-btn-div absolute এর জন্য */
-  transition: transform 0.3s, box-shadow 0.3s;
-}
+  .course-card:hover {
+    border-color: black;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
 
-.course-card:hover {
-  border-color: black;
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
+  .course-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
 
-.course-card img {
-  width: 100%;
-  height: 100px;
-  object-fit: cover;
-}
+  .details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* button নিচে ঠেলতে সাহায্য করবে */
+    padding: 5px;
+  }
 
-.details {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1; /* button নিচে ঠেলতে সাহায্য করবে */
-  padding: 5px;
-}
+  .details div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
 
-.details div {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
+  .details div span {
+    background-color: #eaecf0;
+    color: black;
+    font-size: 10px;
+    font-weight: 200;
+    border-radius: 5px;
+    font-family: "Hind Siliguri";
+    padding: 3px 5px;
+  }
 
-.details div span {
-  background-color: #eaecf0;
-  color: black;
-  font-size: 10px;
-  font-weight: 200;
-  border-radius: 5px;
-  font-family: "Hind Siliguri";
-  padding: 3px 5px;
-}
+  .details div h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+  }
 
-.details div h3 {
-  font-size: 16px;
-  margin-bottom: 10px;
-  color: #333;
-}
+  .details-btn {
+    margin-top: auto; /* button সবসময় নিচে থাকবে */
+    background-color: #e8eee8;
+    color: #000000;
+    border: none;
+    font-family: "Hind Siliguri";
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.details-btn {
-  margin-top: auto; /* button সবসময় নিচে থাকবে */
-  background-color: #e8eee8;
-  color: #000000;
-  border: none;
-  font-family: "Hind Siliguri";
-  font-weight: 600;
-  padding: 8px 12px;
-  border-radius: 5px;
-  cursor: pointer;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
+  .details-btn img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) saturate(100%); /* সব রঙ বাদ দিয়ে কালো করবে */
+    margin-left: 6px; /* টেক্সট আর আইকনের মাঝে ফাঁকা */
+  }
 
-.details-btn img {
-  width: 18px;
-  height: 18px;
-  filter: brightness(0) saturate(100%); /* সব রঙ বাদ দিয়ে কালো করবে */
-  margin-left: 6px; /* টেক্সট আর আইকনের মাঝে ফাঁকা */
-}
+  .details button:hover {
+    background-color: #b4c0b5;
+  }
 
-.details button:hover {
-  background-color: #b4c0b5;
-}
-
-.master-class-container{
-  background-color: #1D2939;
-  color: #fff;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 0 60px;
-}
-.master-class-container h1{
-text-align: center;
-justify-content: center;
-font-size: 18px;
-font-weight: 500;
-justify-items: center;
-}
-/* Horizontal scrollable Master Class Category */
-.master-class-catagory {
+  .master-class-container {
+    background-color: #1d2939;
+    color: #fff;
+    border-radius: 10px;
+  }
+  .master-class-container h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    justify-items: center;
+  }
+  /* Horizontal scrollable Master Class Category */
+  .master-class-catagory {
     display: flex;
     gap: 10px;
     overflow-x: auto; /* horizontal scroll */
@@ -363,74 +359,71 @@ justify-items: center;
     font-family: "Hind Siliguri";
     scrollbar-width: thin; /* Firefox */
     scrollbar-color: #888 #f1f1f1; /* Firefox */
-}
+  }
 
-/* Chrome, Edge, Safari scrollbar customization */
-.master-class-catagory::-webkit-scrollbar {
+  /* Chrome, Edge, Safari scrollbar customization */
+  .master-class-catagory::-webkit-scrollbar {
     height: 6px;
-}
-.master-class-catagory::-webkit-scrollbar-thumb {
+  }
+  .master-class-catagory::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 3px;
-}
-.master-class-catagory::-webkit-scrollbar-track {
+  }
+  .master-class-catagory::-webkit-scrollbar-track {
     background: #f1f1f1;
-}
+  }
 
-.master-class-catagory div {
+  .master-class-catagory div {
     flex: 0 0 auto; /* box content অনুযায়ী width নেবে */
     border-radius: 10px;
     background-color: #0f141a;
     color: #fff;
     text-align: center;
     padding: 10px 15px;
-}
+  }
 
-.master-class-catagory div p{
-  text-align: center;
-  font-size: 14px;
-  justify-content: center;
-  justify-items: center;
-  font-size: small;
-  font-weight: 400;
-
-}
-.master-class-upcomingClass {
+  .master-class-catagory div p {
+    text-align: center;
+    font-size: 14px;
+    justify-content: center;
+    justify-items: center;
+    font-size: small;
+    font-weight: 400;
+  }
+  .master-class-upcomingClass {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* প্রতি রোতে ৪টি কার্ড */
     gap: 10px;
-}
+  }
 
-/* Optional: Master Class Card Styling */
-.master-classes {
+  /* Optional: Master Class Card Styling */
+  .master-classes {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
     text-align: center;
-}
+  }
 
-.master-classes img {
+  .master-classes img {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
+  }
 
-}
-
-.master-classes h1 {
+  .master-classes h1 {
     font-size: 12px;
     margin: 5px 0;
     color: #000;
     font-weight: bold;
-}
+  }
 
-.master-classes p {
+  .master-classes p {
     font-size: 14px;
     color: gray;
-}
+  }
 
-.coursebtn {
-
+  .coursebtn {
     padding: 8px 12px;
     background-color: #eff5ef;
     color: black;
@@ -439,20 +432,20 @@ justify-items: center;
     margin-bottom: 10px;
     border-radius: 5px;
     cursor: pointer;
-}
-.coursebtn:hover {
+  }
+  .coursebtn:hover {
     background-color: #dee7de;
     color: #000;
-}
-.details-see-more {
+  }
+  .details-see-more {
     display: flex;
     justify-content: center; /* horizontal center */
-    align-items: center;     /* vertical center */
+    align-items: center; /* vertical center */
     margin-bottom: 10px;
     margin-top: 20px;
-}
+  }
 
-.details-see-more button {
+  .details-see-more button {
     padding: 8px 12px;
     background-color: #eff5ef;
     color: black;
@@ -460,101 +453,105 @@ justify-items: center;
     border-radius: 5px;
     cursor: pointer;
     font-weight: 500;
-}
+  }
 
-.details-see-more button:hover {
+  .details-see-more button:hover {
     background-color: #dee7de;
     color: #000;
-}
+  }
 
+  .live-course-section {
+    background-color: #f8f9fa;
+  }
 
+  .live-course-section h2 {
+    margin: 0 0 10px 0; /* শুধু bottom margin রাখলাম */
+    font-size: 20px;
+    text-align: center;
+    font-family: "Hind Siliguri";
+  }
 
-.live-course-section {
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+  }
 
-  background-color: #f8f9fa;
-  
-}
+  .feature-item {
+    height: 100px;
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
 
-.live-course-section h2 {
-  margin: 0 0 10px 0; /* শুধু bottom margin রাখলাম */
-  font-size: 20px;
-  text-align: center;
-  font-family: "Hind Siliguri";
-}
+  .feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
 
+  .feature-item img {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+  }
 
-.features-grid {
+  .feature-item h4 {
+    font-family: "Hind Siliguri";
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+  }
 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  margin-bottom: 10px;
-}
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+  }
 
-.feature-item {
+  .stat-item-1,
+  .stat-item-2,
+  .stat-item-3,
+  .stat-item-4 {
+    height: 60px;
+    padding: 5px;
+    background-color: #d1fadf;
+    border-radius: 10px;
+  }
+  .stat-item-1 h1,
+  .stat-item-2 h1,
+  .stat-item-3 h1,
+  .stat-item-4 h1 {
+    font-size: 18px;
+    color: black;
+    margin-top: 6px;
+  }
+  .stat-item-1 p,
+  .stat-item-2 p,
+  .stat-item-3 p,
+  .stat-item-4 p {
+    font-size: 14px;
+    color: black;
+    font-weight: normal;
+    margin-top: 4px;
+    font-family: "Hind Siliguri";
+  }
 
-  background: #fff;
-  border-radius: 8px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
+  .testimonial-section {
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
 
-.feature-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
+    margin-top: 20px;
+  }
 
-.feature-item img {
-  margin: 0;
-  width: 40px;
-  height: 40px;
-}
-
-.feature-item h4 {
-  font-family: "Hind Siliguri";
-  font-size: 14px;
-  color: #333;
-  margin-bottom: -20px;
-  font-weight: 400;
-}
-
-
-.stats-grid {
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  text-align: center;
-}
-
-.stat-item-1 ,.stat-item-2 , .stat-item-3 , .stat-item-4 {
-  height: 60px;
-  padding: 5px;
-  background-color: #d1fadf;
-  border-radius: 10px;
-}
-.stat-item-1 h1 , .stat-item-2 h1, .stat-item-3 h1, .stat-item-4 h1 {
-
-  font-size: 18px;
-  color: black;
-  margin-top: 6px;
-
-}
-.stat-item-1 p, .stat-item-2 p , .stat-item-3 p , .stat-item-4 p   {
-  font-size: 14px;
-  color: black;
-  font-weight: normal;
-  margin-top: 4px;
-  font-family: "Hind Siliguri";
-}
-
-.testimonial-section {
-  max-width: 1200px;
-  height: auto;
-  margin: auto;
-  padding: 0 60px;
+  footer {
+  background: #fdf6ec;
+  padding: 0;
   margin-top: 20px;
+  border-top: 1px solid #eee;
 }
-
 }

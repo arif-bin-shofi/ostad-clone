@@ -657,7 +657,7 @@ header {
   color: #fff;
   border-radius: 10px;
   padding: 15px;
-  margin: 0 60px;
+
 }
 .master-class-container h1{
 text-align: center;
@@ -761,9 +761,10 @@ font-size: 1rem;
 }
 
 .live-course-section {
-  padding: 0 65px;
+
   background-color: #f8f9fa;
   text-align: center;
+  margin: 0;
 }
 
 .live-course-section h2 {
@@ -783,7 +784,7 @@ font-size: 1rem;
 .feature-item {
   background: #fff;
   border-radius: 8px;
-  padding: 20px;
+
   text-align: center;
   border-bottom: 1px solid #ddd;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -896,7 +897,7 @@ font-size: 1rem;
   max-width: 1200px;
   height: auto;
   margin: auto;
-  padding: 0 60px;
+
 }
 
 .testimonial-section h2 {
