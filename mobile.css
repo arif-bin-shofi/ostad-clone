@@ -183,7 +183,7 @@
 .category-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* প্রতি সারিতে ৪টা */
- 
+ margin-top: 20px;
   margin-bottom: 10px;
 }
   .category-item {
