@@ -8,7 +8,6 @@
     display: none !important;
   }
 
-  /* Keep only these */
   .logo,
   .notification,
   .lang-select,
@@ -34,16 +33,15 @@
   display: block;
 }
 
-  /* Right side arrange */
   .nav-right {
     gap: 10px;
   }
 
   .caintainer {
-    padding: 0 20px; /* মোবাইলে কম padding */
+    padding: 0 20px;
   }
 
-  /* Mocku Banner */
+
   .mocku-banner {
     padding: 1rem;
     height: auto;
@@ -52,7 +50,7 @@
   .mocku-content {
     height: 25px;
     font-size: 0.7rem;
-    padding: 0.75rem 1rem;
+    padding: 0.60rem 1rem;
   }
 
   .mocku-content p {
@@ -60,7 +58,7 @@
     padding: 2px 8px;
   }
 
-  /* Banner Section */
+ 
   .banner {
     flex-direction: column;   /* একের পর এক আসবে */
     align-items: center;
@@ -92,7 +90,7 @@
     max-width: 400px; /* মোবাইলে সীমিত সাইজ */
   }
 
-  /* Logo grid */
+ 
   .logo-grid {
     justify-content: center;
   }
@@ -102,39 +100,59 @@
     height: auto;
   }
 
-  /* Bottom banner */
   .bottom-banner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    height: auto;
-    padding: 15px;
-    text-align: left;
-  }
+  width: auto;
+  height: 35px;
+  background: linear-gradient(90deg, #0c3f30, #0f141a, #0c3f30); /* 3 রঙ */
+  color: #fff;
+  display: flex;
+  justify-content: space-between; /* বাম পাশে text+img, ডানে button */
+  align-items: center;
+  border-radius: 8px;
+  padding: 5px;
+  gap: 10px;
+}
+
 
   .banner-start {
-    gap: 10px;
+    gap: 5px;
   }
 
   .banner-start img {
-    width: 60px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    
   }
 
   .banner-start h3 {
-    font-size: 18px;
-  }
+  font-size: 12px;
+  font-weight: 300;
+   font-family: "Hind Siliguri";
+}
 
-  .banner-start span {
-    font-size: 14px;
-  }
+.banner-start span {
+  font-size: 10px;
+  font-weight: 300;
+   font-family: "Hind Siliguri";
+  display: block;
+}
 
-  .btn-yellow-dark {
-    font-size: 14px;
-    padding: 10px 16px;
-  }
+ .btn-yellow-dark {
+  background: #ffcc00;
+  color: #000;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Hind Siliguri";
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+ }
 
-  /* upcoming  */
+
 .upcoming-title {
   justify-content: center;
   align-items: center;
@@ -156,17 +174,298 @@
   height: 30px;
 }
 
-.category-item {
-  width: auto;
-  display: flex;
-  align-items: center;
+
+.category-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* প্রতি সারিতে ৪টা */
   gap: 10px;
-  width: auto;
-  background: #f8f9fa;
+  margin-bottom: 10px;
+}
+  .category-item {
+    min-width: 100px;
+    padding: 12px;
+  }
+
+  .course-card img {
+    height: 160px;
+  }
+
+  .category-section {
+    justify-content: center; /* সেন্টারে আসবে */
+  }
+
+  .category-item {
+    min-width: 150px;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .category-item h4 {
+    font-size: 12px;
+  }
+
+  .category-item h5 {
+    font-size: 11px;
+  }
+
+  .icon-circle {
+    width: 35px;
+    height: 35px;
+  }
+
+  .icon-circle img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .category-courses {
+    grid-template-columns: repeat(2, 1fr); /* ২ কলামে */
+  }
+
+  .course-card img {
+    height: 150px;
+  }
+
+  .details h3 {
+    font-size: 14px;
+  }
+
+  .details div span {
+    font-size: 11px;
+    padding: 2px 4px;
+  }
+
+  .details-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .category-section {
+    flex-direction: row-reverse; /* একের পর এক আসবে */
+    gap: 12px;
+  }
+
+  .category-item {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+
+.category-courses {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ৪টি কার্ড প্রতি সারিতে */
+  gap: 10px;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column; /* কার্ড ভেতরের উপাদান লম্বা ভাবে সাজাবে */
+  background: #fff;
   border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative; /* all-btn-div absolute এর জন্য */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+  border-color: black;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* button নিচে ঠেলতে সাহায্য করবে */
+  padding: 5px;
+}
+
+.details div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.details div span {
+  background-color: #eaecf0;
+  color: black;
+  font-size: 10px;
+  font-weight: 200;
+  border-radius: 5px;
+  font-family: "Hind Siliguri";
+  padding: 3px 5px;
+}
+
+.details div h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.details-btn {
+  margin-top: auto; /* button সবসময় নিচে থাকবে */
+  background-color: #e8eee8;
+  color: #000000;
+  border: none;
+  font-family: "Hind Siliguri";
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-btn img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) saturate(100%); /* সব রঙ বাদ দিয়ে কালো করবে */
+  margin-left: 6px; /* টেক্সট আর আইকনের মাঝে ফাঁকা */
+}
+
+.details button:hover {
+  background-color: #b4c0b5;
+}
+
+
+.live-course-section {
+
+  background-color: #f8f9fa;
+  
+}
+
+.live-course-section h2 {
+  margin: 10px 0;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Hind Siliguri";
+}
+
+
+.features-grid {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.feature-item {
+
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item img {
+  margin: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.feature-item h4 {
+  font-family: "Hind Siliguri";
+  font-size: 14px;
+  color: #333;
+  margin-bottom: -20px;
+  font-weight: 400;
+}
+
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+.stat-item-1 {
+  height: auto;
+  background-color: #d1fadf;
   border-radius: 10px;
-  padding: 10px;
-  transition: 0.3s;
+}
+.stat-item-1 h1 {
+  font-size: 20px;
+  color: black;
+
+}
+.stat-item-1 p {
+  font-size: 14px;
+  color: black;
+  font-weight: normal;
+  margin-top: -15px;
+  font-family: "Hind Siliguri";
+}
+
+.stat-item-2 {
+  height: 80px;
+  background-color: #dae4ff;
+  border-radius: 10px;
+}
+.stat-item-2 h1 {
+  font-size: 20px;
+  color: black;
+  
+
+ 
+}
+.stat-item-2 p {
+  font-size: 14px;
+  color: black;
+  font-weight: normal;
+  margin-top: -15px;
+  font-family: "Hind Siliguri";
+}
+
+.stat-item-3 {
+  height: 80px;
+  background-color: #ffe8db;
+  border-radius: 10px;
+}
+.stat-item-3 h1 {
+  font-size: 20px;
+  color: black;
+  
+}
+.stat-item-3 p {
+  font-size: 14px;
+  color: black;
+  font-weight: normal;
+  margin-top: -15px;
+  font-family: "Hind Siliguri";
+}
+
+.stat-item-4 {
+  height: 80px;
+  background-color: #fff2cc;
+  border-radius: 10px;
+}
+
+.stat-item-4 h1 {
+  font-size: 20px;
+  color: black;
+}
+
+.stat-item-4 p {
+  font-size: 14px;
+  color: black;
+  margin-top: -15px;
+  font-family: "Hind Siliguri";
 }
 
 }
