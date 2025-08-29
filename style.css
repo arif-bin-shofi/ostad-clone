@@ -1,22 +1,8 @@
-
 body {
   margin: 0;
   padding: 0;
-    font-family: 'Noto Sans Bengali', 'Hind Siliguri', 'Open Sans', 'Ubuntu', sans-serif;
-}
-
-/* Responsive: tablet */
-@media (max-width: 1024px) {
-  .category-courses {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Responsive: mobile */
-@media (max-width: 600px) {
-  .category-courses {
-    grid-template-columns: 1fr;
-  }
+  font-family: "Noto Sans Bengali", "Hind Siliguri", "Open Sans", "Ubuntu",
+    sans-serif;
 }
 
 /* Header */
@@ -29,10 +15,13 @@ header {
   background: #fff;
 }
 
-/* Logo */
-.logo img {
-  height: 25px;
-  width: 90px;
+.logo {
+  width: 80px;       /* logo width */
+  height: 25px;      /* logo height */
+  background-image: url('/images/logo.png');  /* logo path */
+  background-size: contain;  /* সম্পূর্ণ logo দেখা যাবে */
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Left Menu */
@@ -266,8 +255,6 @@ header {
   cursor: pointer;
 }
 
-
-
 .caintainer {
   width: auto;
   height: auto;
@@ -356,7 +343,6 @@ header {
   margin-top: -5px;
 }
 
-
 .banner-text h1 span {
   color: red;
 }
@@ -404,7 +390,7 @@ header {
   font-weight: 600;
 }
 
-.banner-text h3 span{
+.banner-text h3 span {
   font-size: 16px;
   font-family: sans-serif;
   margin-bottom: 10px;
@@ -437,7 +423,6 @@ header {
   margin-top: 20px;
   gap: 20px;
 }
-
 
 .banner-start {
   display: flex;
@@ -488,14 +473,13 @@ header {
 }
 
 /* upcoming  */
-.upcoming-title{
-justify-content: center;
-align-items: center;
-justify-items: center;
-margin-bottom: -20px;
-display: flex;
-gap: 10px;
-
+.upcoming-title {
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: -20px;
+  display: flex;
+  gap: 10px;
 }
 .upcoming-title h2 {
   font-size: 40px;
@@ -504,20 +488,17 @@ gap: 10px;
   justify-content: center;
   text-align: center;
   gap: 10;
-
 }
-.upcoming-title img{
-    width: 40px;
-    height: 40px;
-
+.upcoming-title img {
+  width: 40px;
+  height: 40px;
 }
 
 .category-section {
-  display: flex;    
+  display: flex;
   gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 20px;
-  
 }
 
 .category-item {
@@ -533,8 +514,8 @@ gap: 10px;
   transition: 0.3s;
 }
 
-.category-item:hover  {
-  background: #1D2939;
+.category-item:hover {
+  background: #1d2939;
   color: white;
   transform: translateY(-5px);
 }
@@ -542,7 +523,6 @@ gap: 10px;
 .category-item:hover h5 {
   color: white;
   text-decoration: underline;
-
 }
 
 .icon-circle {
@@ -556,7 +536,7 @@ gap: 10px;
   flex-shrink: 0;
 }
 .icon-circle img {
-  width: 20px;  
+  width: 20px;
   height: 20px;
   filter: grayscale(100%) brightness(60%);
   object-fit: contain;
@@ -565,10 +545,8 @@ gap: 10px;
 }
 
 .category-item:hover .icon-circle img {
-
   filter: none;
 }
-
 
 .category-item h4 {
   font-size: 14px;
@@ -588,7 +566,6 @@ gap: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* ৪টি কার্ড প্রতি সারিতে */
   gap: 20px;
- 
 }
 
 .course-card {
@@ -598,14 +575,14 @@ gap: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-   position: relative; /* all-btn-div absolute এর জন্য */
+  position: relative; /* all-btn-div absolute এর জন্য */
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .course-card:hover {
   border-color: black;
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .course-card img {
@@ -625,12 +602,11 @@ gap: 10px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
-  
-} 
+}
 
-.details div span{
-  background-color: #EAECF0;
-  color:black;
+.details div span {
+  background-color: #eaecf0;
+  color: black;
   font-size: 12px;
   font-weight: 300;
   border-radius: 5px;
@@ -668,4 +644,341 @@ gap: 10px;
 
 .details button:hover {
   background-color: #b4c0b5;
+}
+
+.live-course-section {
+  padding: 0 65px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.live-course-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+/* Features grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.feature-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item img {
+  width: 60px;
+  height: 60px;
+}
+
+.feature-item h4 {
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Stats grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  text-align: center;
+}
+
+.stat-item-1 {
+  height: 110px;
+  background-color: #d1fadf;
+  border-radius: 10px;
+}
+.stat-item-1 h1 {
+  font-size: 30px;
+  color: black;
+  font-weight: 900;
+  font-family: "Hind Siliguri";
+}
+.stat-item-1 p {
+  font-size: 16px;
+  color: black;
+  font-weight: normal;
+  margin-top: -25px;
+  font-family: "Hind Siliguri";
+}
+
+.stat-item-2 {
+  height: 110px;
+  background-color: #dae4ff;
+  border-radius: 10px;
+}
+.stat-item-2 h1 {
+  font-size: 30px;
+  color: black;
+  font-weight: 900;
+  font-family: "Hind Siliguri";
+}
+.stat-item-2 p {
+  font-size: 16px;
+  color: black;
+  font-weight: normal;
+  margin-top: -25px;
+  font-family: "Hind Siliguri";
+}
+
+.stat-item-3 {
+  height: 110px;
+  background-color: #ffe8db;
+  border-radius: 10px;
+}
+.stat-item-3 h1 {
+  font-size: 30px;
+  color: black;
+  font-weight: 900;
+  font-family: "Hind Siliguri";
+}
+.stat-item-3 p {
+  font-size: 16px;
+  color: black;
+  font-weight: normal;
+  margin-top: -25px;
+  font-family: "Hind Siliguri";
+}
+
+.stat-item-4 {
+  height: 110px;
+  background-color: #fff2cc;
+  border-radius: 10px;
+}
+
+.stat-item-4 h1 {
+  font-size: 30px;
+  color: black;
+  font-weight: 900;
+  font-family: "Hind Siliguri";
+}
+
+.stat-item-4 p {
+  font-size: 16px;
+  color: black;
+  font-weight: normal;
+  margin-top: -25px;
+  font-family: "Hind Siliguri";
+}
+
+.testimonial-section {
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  padding: 0 60px;
+}
+
+.testimonial-section h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.testimonial-section p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.testimonial-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 20px;
+  background: #fafafa;
+  transition: 0.3s;
+  height: auto; /* height auto */
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-icon {
+  background: #1d2939;
+  color: #fff;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.author-info h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.author-info p {
+  margin: 0;
+  font-size: 13px;
+  color: #777;
+}
+
+footer {
+  background: #fdf6ec;
+  padding: 20px 60px;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-column p,
+.footer-column a {
+  font-size: 14px;
+  color: #333;
+  margin: 6px 0;
+  text-decoration: none;
+  display: block;
+}
+
+.footer-column a:hover {
+  color: #f57c00;
+  text-decoration: underline;
+}
+
+.footer-logo img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.download-app {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.download-app img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-links img {
+  width: 28px;
+  height: 28px;
+}
+.payment-logos {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.payment-logos img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+/* Mocku Banner Styling */
+.all-btn-div {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  padding: 1.5rem;
+  margin-top: 0;
+}
+
+.all-btn {
+  background-color: #dfe7e5; /* A vibrant green background */
+  padding: 1rem;
+  border-radius: 10px; /* Fully rounded corners */
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.all-btn span {
+  font-family: 1em Arial, Helvetica, sans-serif;
+  color: #383535;
+  font-weight: normal;
+}
+.all-btn p {
+  background-color: #bbceca;
+  color: white;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+
+.all-btn:hover {
+  background-color: #b6bdb8;
+}
+
+.all-btn img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) saturate(100%);
 }
