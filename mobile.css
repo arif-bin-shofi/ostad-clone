@@ -544,8 +544,11 @@
     max-width: 1200px;
     height: auto;
     margin: auto;
-
     margin-top: 20px;
+  }
+
+  .testimonial-section h2{
+    font-size: 20px;
   }
 
   footer {
