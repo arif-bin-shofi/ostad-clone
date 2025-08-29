@@ -156,5 +156,17 @@
   height: 30px;
 }
 
+.category-item {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: auto;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s;
+}
 
 }
