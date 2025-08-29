@@ -1,4 +1,4 @@
-/* Responsive: Mobile */
+
 @media (max-width: 768px) {
   h1,
   h2,
@@ -11,7 +11,7 @@
     padding: 0;
   }
 
-  /* Hide items */
+
   .search-btn,
   .menu,
   .dashboard-btn,
@@ -71,7 +71,7 @@
   }
 
   .banner {
-    flex-direction: column; /* একের পর এক আসবে */
+    flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 20px;
@@ -98,7 +98,7 @@
   .banner-img img {
     width: 100%;
     height: auto;
-    max-width: 400px; /* মোবাইলে সীমিত সাইজ */
+    max-width: 400px; 
   }
 
   .logo-grid {
@@ -113,10 +113,10 @@
   .bottom-banner {
     width: auto;
     height: 35px;
-    background: linear-gradient(90deg, #0c3f30, #0f141a, #0c3f30); /* 3 রঙ */
+    background: linear-gradient(90deg, #0c3f30, #0f141a, #0c3f30); 
     color: #fff;
     display: flex;
-    justify-content: space-between; /* বাম পাশে text+img, ডানে button */
+    justify-content: space-between;
     align-items: center;
     border-radius: 8px;
     padding: 5px;
@@ -183,8 +183,7 @@
 
   .category-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* প্রতি সারিতে ৪টা */
-    margin-top: 20px;
+    grid-template-columns: repeat(2, 1fr); 
     margin-bottom: 10px;
     padding: 0 20px;
   }
@@ -198,7 +197,7 @@
   }
 
   .category-section {
-    justify-content: center; /* সেন্টারে আসবে */
+    justify-content: center; 
   }
 
   .category-item {
@@ -225,7 +224,7 @@
   }
 
   .category-courses {
-    grid-template-columns: repeat(2, 1fr); /* ২ কলামে */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .course-card img {
@@ -247,7 +246,7 @@
   }
 
   .category-section {
-    flex-direction: row-reverse; /* একের পর এক আসবে */
+    flex-direction: row-reverse; 
     gap: 12px;
   }
 
@@ -258,18 +257,18 @@
 
   .category-courses {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* ৪টি কার্ড প্রতি সারিতে */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 10px;
   }
 
   .course-card {
     display: flex;
-    flex-direction: column; /* কার্ড ভেতরের উপাদান লম্বা ভাবে সাজাবে */
+    flex-direction: column;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    position: relative; /* all-btn-div absolute এর জন্য */
+    position: relative; 
     transition: transform 0.3s, box-shadow 0.3s;
   }
 
@@ -288,7 +287,7 @@
   .details {
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* button নিচে ঠেলতে সাহায্য করবে */
+    flex-grow: 1; 
     padding: 5px;
   }
 
@@ -315,7 +314,7 @@
   }
 
   .details-btn {
-    margin-top: auto; /* button সবসময় নিচে থাকবে */
+    margin-top: auto; 
     background-color: #e8eee8;
     color: #000000;
     border: none;
@@ -332,8 +331,8 @@
   .details-btn img {
     width: 18px;
     height: 18px;
-    filter: brightness(0) saturate(100%); /* সব রঙ বাদ দিয়ে কালো করবে */
-    margin-left: 6px; /* টেক্সট আর আইকনের মাঝে ফাঁকা */
+    filter: brightness(0) saturate(100%);
+    margin-left: 6px; 
   }
 
   .details button:hover {
@@ -352,18 +351,18 @@
     font-weight: 500;
     justify-items: center;
   }
-  /* Horizontal scrollable Master Class Category */
+
   .master-class-catagory {
     display: flex;
     gap: 10px;
-    overflow-x: auto; /* horizontal scroll */
-    padding-bottom: 10px; /* scrollbar এর জন্য spacing */
+    overflow-x: auto;
+    padding-bottom: 10px;
     font-family: "Hind Siliguri";
-    scrollbar-width: thin; /* Firefox */
-    scrollbar-color: #888 #f1f1f1; /* Firefox */
+    scrollbar-width: thin; 
+    scrollbar-color: #888 #f1f1f1;
   }
 
-  /* Chrome, Edge, Safari scrollbar customization */
+
   .master-class-catagory::-webkit-scrollbar {
     height: 6px;
   }
@@ -376,8 +375,7 @@
   }
 
   .master-class-catagory div {
-    flex: 0 0 auto; /* box content অনুযায়ী width নেবে */
-    border-radius: 10px;
+    flex: 0 0 auto; 
     background-color: #0f141a;
     color: #fff;
     text-align: center;
@@ -394,11 +392,11 @@
   }
   .master-class-upcomingClass {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* প্রতি রোতে ৪টি কার্ড */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 10px;
   }
 
-  /* Optional: Master Class Card Styling */
+
   .master-classes {
     background: #fff;
     border: 1px solid #ddd;
@@ -441,8 +439,8 @@
   }
   .details-see-more {
     display: flex;
-    justify-content: center; /* horizontal center */
-    align-items: center; /* vertical center */
+    justify-content: center; 
+    align-items: center; 
     margin-bottom: 10px;
     margin-top: 20px;
   }
@@ -467,7 +465,7 @@
   }
 
   .live-course-section h2 {
-    margin: 0 0 10px 0; /* শুধু bottom margin রাখলাম */
+    margin: 0 0 10px 0; 
     font-size: 20px;
     text-align: center;
     font-family: "Hind Siliguri";
